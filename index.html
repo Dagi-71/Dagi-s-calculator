@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Modern Calculator | Responsive</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator-card">
+      <div class="display-area">
+        <div class="previous-operand" id="previousOperand"></div>
+        <div class="current-operand" id="currentOperand">0</div>
+      </div>
+
+      <div class="buttons-grid">
+        <button class="btn btn-clear" data-action="clear">AC</button>
+        <button class="btn btn-sign" data-action="sign">+/−</button>
+        <button class="btn btn-percent" data-action="percent">%</button>
+        <button class="btn btn-operator" data-op="/">÷</button>
+
+        <button class="btn btn-number" data-num="7">7</button>
+        <button class="btn btn-number" data-num="8">8</button>
+        <button class="btn btn-number" data-num="9">9</button>
+        <button class="btn btn-operator" data-op="*">×</button>
+
+        <button class="btn btn-number" data-num="4">4</button>
+        <button class="btn btn-number" data-num="5">5</button>
+        <button class="btn btn-number" data-num="6">6</button>
+        <button class="btn btn-operator" data-op="-">−</button>
+
+        <button class="btn btn-number" data-num="1">1</button>
+        <button class="btn btn-number" data-num="2">2</button>
+        <button class="btn btn-number" data-num="3">3</button>
+        <button class="btn btn-operator" data-op="+">+</button>
+
+        <button class="btn btn-number zero-btn" data-num="0">0</button>
+        <button class="btn btn-number" data-num=".">.</button>
+        <button class="btn btn-equals" data-action="equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
